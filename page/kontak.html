@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Kontak – SD Negeri 1 Sukamulya</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+
+    <link rel="stylesheet" href="../css/global.css" />
+    <link rel="stylesheet" href="../css/navbar.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+    <link rel="stylesheet" href="../css/kontak.css" />
+  </head>
+
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top main-navbar">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="../index.html">
+          <img src="../Img/logo.png" class="logo-img me-2" />
+          <span class="logo-text">SD Negeri 1 Sukamulya</span>
+        </a>
+
+        <button
+          class="navbar-toggler"
+          data-bs-toggle="collapse"
+          data-bs-target="#navMenu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navMenu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">Beranda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="profil.html">Profil</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="alumni.html">Data Alumni</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="berita.html">Berita</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="kontak.html">Kontak</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-overlay">
+        <div class="container text-center text-white">
+          <h1 class="fw-bold">Hubungi Kami</h1>
+          <p>SD Negeri 1 Sukamulya – Kabupaten Kuningan</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTENT -->
+    <div class="kontak-content">
+      <div class="kontak-grid">
+        <!-- INFO kontak -->
+        <div class="kontak-box">
+          <h4>Informasi Sekolah</h4>
+
+          <p>
+            <strong>Alamat:</strong><br />
+            Jl. Raya Cigugur No.114, Sukamulya, Kec. Kuningan,<br />
+            Kabupaten Kuningan, Jawa Barat
+          </p>
+
+          <p><strong>Telepon:</strong><br />(0232) 8880472</p>
+          <p><strong>Email:</strong><br />sukamulyasdn1@gmail.com</p>
+          <p>
+            <strong>Jam Operasional:</strong><br />
+            Senin – Sabtu, 07.00 – 14.00 WIB
+          </p>
+        </div>
+
+        <!-- FORM KONTAK -->
+        <div class="kontak-box">
+          <h4>Kirim Pesan</h4>
+
+          <form id="formPesan">
+            <div class="form-group">
+              <label>Nama</label>
+              <input
+                type="text"
+                id="nama"
+                placeholder="Nama lengkap"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label>Email</label>
+              <input
+                type="email"
+                id="email"
+                placeholder="Email aktif"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label>Pesan</label>
+              <textarea
+                id="pesan"
+                rows="5"
+                placeholder="Tulis pesan..."
+                required
+              ></textarea>
+            </div>
+
+            <button type="submit" class="btn-kirim">Kirim Pesan</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <h5>SD Negeri 1 Sukamulya</h5>
+            <p>Portal Alumni dan Informasi Resmi Sekolah.</p>
+          </div>
+
+          <div class="col-md-6 mb-3">
+            <h5>Kontak Sekolah</h5>
+            <p class="footer-contact">
+              <i class="bi bi-geo-alt-fill"></i>
+              <a
+                href="https://www.google.com/maps?q=SD+Negeri+1+Sukamulya+Kuningan"
+                target="_blank"
+              >
+                Jl. Raya Cigugur No.114, Sukamulya, Kec. Kuningan, Kabupaten
+                Kuningan, Jawa Barat
+              </a>
+              <br />
+
+              <i class="bi bi-telephone-fill"></i>
+              <a href="tel:02328880472"> (0232) 8880472 </a>
+              <br />
+
+              <i class="bi bi-envelope-fill"></i>
+              <a href="mailto:sukamulyasdn1@gmail.com">
+                sukamulyasdn1@gmail.com
+              </a>
+            </p>
+          </div>
+        </div>
+
+        <hr />
+
+        <div class="text-center">
+          © 2026 SD Negeri 1 Sukamulya – Portal Alumni
+        </div>
+      </div>
+    </footer>
+
+    <!-- SCRIPT GOOGLE SPREADSHEET -->
+    <script>
+      document
+        .getElementById("formPesan")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+
+          fetch(
+            "https://script.google.com/macros/s/AKfycbxWP6DRqgzlxpLsZu3EzwHL_Sm_Zh-nPRF4oYl1Cr5bUTHnT2dmKyd9o5MbJI53lA4MNg/exec",
+            {
+              method: "POST",
+              body: JSON.stringify({
+                nama: document.getElementById("nama").value,
+                email: document.getElementById("email").value,
+                pesan: document.getElementById("pesan").value,
+              }),
+            },
+          )
+            .then((response) => response.text())
+            .then((result) => {
+              alert("Pesan berhasil dikirim!");
+              document.getElementById("formPesan").reset();
+            })
+            .catch((error) => {
+              alert("Pesan gagal dikirim!");
+              console.error(error);
+            });
+        });
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/navbar.js"></script>
+  </body>
+</html>

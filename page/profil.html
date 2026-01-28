@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Profil Sekolah | SD Negeri 1 Sukamulya</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+
+    <link rel="stylesheet" href="../css/global.css" />
+    <link rel="stylesheet" href="../css/navbar.css" />
+    <link rel="stylesheet" href="../css/profil.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+  </head>
+
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top main-navbar">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="../index.html">
+          <img src="../Img/logo.png" class="logo-img me-2" />
+          <span class="logo-text">SD Negeri 1 Sukamulya</span>
+        </a>
+
+        <button
+          class="navbar-toggler"
+          data-bs-toggle="collapse"
+          data-bs-target="#navMenu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navMenu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">Beranda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="profil.html">Profil</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="alumni.html">Data Alumni</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="berita.html">Berita</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="kontak.html">Kontak</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-overlay">
+        <div class="container text-white text-center">
+          <h1 class="fw-bold">Profil Sekolah</h1>
+          <p>Mengenal lebih dekat SD Negeri 1 Sukamulya</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- DATA GURU -->
+    <section class="container my-5">
+      <h2 class="text-center mb-4">Data Guru</h2>
+
+      <div class="card shadow-sm">
+        <div class="card-body">
+          <div class="table-responsive">
+            <table class="table table-bordered table-striped" id="tabelGuru">
+              <thead class="table-dark text-center">
+                <tr>
+                  <th>No</th>
+                  <th>Nama</th>
+                  <th>NIP</th>
+                  <th>Jabatan</th>
+                </tr>
+              </thead>
+              <tbody>
+                <!-- Data dari Spreadsheet akan masuk di sini -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTENT -->
+    <section class="container my-5">
+      <h2 class="text-center mb-4">
+        Mengenal Lebih Dekat SD Negeri 1 Sukamulya
+      </h2>
+
+      <div class="row g-4">
+        <!-- Tentang Sekolah -->
+        <div class="col-md-4">
+          <div class="profile-card">
+            <div class="profile-icon">
+              <i class="fas fa-school"></i>
+            </div>
+            <h5>Sejarah Singkat</h5>
+            <p>
+              SD Negeri 1 Sukamulya berdiri sejak tahun 1957 sebagai lembaga
+              pendidikan dasar yang melayani masyarakat Desa Sukamulya dan
+              sekitarnya. Sejak awal berdiri hingga sekarang, sekolah ini terus
+              berkomitmen mencetak generasi muda yang cerdas, berkarakter, dan
+              berdaya saing.
+            </p>
+          </div>
+        </div>
+
+        <!-- Visi -->
+        <div class="col-md-4">
+          <div class="profile-card">
+            <div class="profile-icon">
+              <i class="fas fa-bullseye"></i>
+            </div>
+            <h5>Visi Sekolah</h5>
+            <p>
+              Terwujudnya peserta didik yang cerdas, berkarakter, berprestasi,
+              dan berakhlak mulia.
+            </p>
+          </div>
+        </div>
+
+        <!-- Misi -->
+        <div class="col-md-4">
+          <div class="profile-card">
+            <div class="profile-icon">
+              <i class="fas fa-tasks"></i>
+            </div>
+            <h5>Misi Sekolah</h5>
+            <ul class="mission-list">
+              <li>Pembelajaran yang aktif, kreatif dan berkualitas</li>
+              <li>
+                Pembentukan karakter disiplin, jujur dan bertanggung jawab
+              </li>
+              <li>Pengembangan prestasi siswa</li>
+              <li>Menanamkan nilai-nilai Pancasila dan budaya bangsa</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <h5>SD Negeri 1 Sukamulya</h5>
+            <p>Portal Alumni dan Informasi Resmi Sekolah.</p>
+          </div>
+
+          <div class="col-md-6 mb-3">
+            <h5>Kontak Sekolah</h5>
+            <p class="footer-contact">
+              <i class="bi bi-geo-alt-fill"></i>
+              <a
+                href="https://www.google.com/maps?q=SD+Negeri+1+Sukamulya+Kuningan"
+                target="_blank"
+              >
+                Jl. Raya Cigugur No.114, Sukamulya, Kec. Kuningan, Kabupaten
+                Kuningan, Jawa Barat
+              </a>
+              <br />
+
+              <i class="bi bi-telephone-fill"></i>
+              <a href="tel:02328880472"> (0232) 8880472 </a>
+              <br />
+
+              <i class="bi bi-envelope-fill"></i>
+              <a href="mailto:sukamulyasdn1@gmail.com">
+                sukamulyasdn1@gmail.com
+              </a>
+            </p>
+          </div>
+        </div>
+
+        <hr />
+
+        <div class="text-center">
+          © 2026 SD Negeri 1 Sukamulya – Portal Alumni
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/navbar.js"></script>
+    <script src="../js/profil.js"></script>
+  </body>
+</html>

@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Portal Alumni SDN 1 Sukamulya</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/home.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+  </head>
+
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top main-navbar">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="index.html">
+          <img src="Img/logo.png" class="logo-img me-2" />
+          <span class="logo-text">SD Negeri 1 Sukamulya</span>
+        </a>
+
+        <button
+          class="navbar-toggler"
+          data-bs-toggle="collapse"
+          data-bs-target="#navMenu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navMenu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Beranda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="page/profil.html">Profil</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="page/alumni.html">Data Alumni</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="page/berita.html">Berita</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="page/kontak.html">Kontak</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-overlay">
+        <div class="container text-center text-white">
+          <h1 class="fw-bold">Portal Alumni SD Negeri 1 Sukamulya</h1>
+          <h3>Menghubungkan lulusan lintas angkatan</h3>
+        </div>
+      </div>
+    </section>
+
+    <!-- INFO -->
+    <section class="container my-5">
+      <div class="row g-4">
+        <div class="col-md-4">
+          <a href="page/profil.html" class="home-card">
+            <div class="card-style text-center">
+              <div class="icon-box">
+                <i class="bi bi-building"></i>
+              </div>
+              <h4>Profil Sekolah</h4>
+              <p>Informasi sejarah, visi, dan misi SD Negeri 1 Sukamulya.</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-md-4">
+          <a href="page/alumni.html" class="home-card">
+            <div class="card-style text-center">
+              <div class="icon-box">
+                <i class="bi bi-people"></i>
+              </div>
+              <h4>Data Alumni</h4>
+              <p>Direktori alumni berdasarkan nama dan angkatan.</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-md-4">
+          <a href="page/kontak.html" class="home-card">
+            <div class="card-style text-center">
+              <div class="icon-box">
+                <i class="bi bi-telephone-fill"></i>
+              </div>
+              <h4>Kontak</h4>
+              <p>Informasi kontak sekolah.</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- RINGKASAN DATA ALUMNI -->
+    <section class="container my-5">
+      <div class="card alumni-summary-card">
+        <div class="card-body">
+          <div class="text-center mb-4">
+            <h2 class="fw-bold">Ringkasan Data Alumni</h2>
+            <p class="text-muted">
+              Rekapitulasi jumlah lulusan dan alumni yang terdata di website
+              alumni
+            </p>
+          </div>
+
+          <div class="table-responsive">
+            <table class="table table-bordered table-striped text-center">
+              <thead class="alumni-table-head">
+                <tr>
+                  <th>Angkatan</th>
+                  <th>Jumlah Lulusan</th>
+                  <th>Alumni Terdata</th>
+                </tr>
+              </thead>
+              <tbody id="data-alumni">
+                <!-- Data dari Google Spreadsheet muncul di sini -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container my-5">
+      <div class="text-center mb-4">
+        <h2 class="fw-bold">Galeri Sekolah</h2>
+        <p class="text-muted">
+          Dokumentasi kegiatan dan lingkungan SD Negeri 1 Sukamulya
+        </p>
+      </div>
+
+      <!-- FILTER GALLERY -->
+      <div class="gallery-filter text-center mb-4">
+        <button class="filter-btn active" data-filter="all">Semua</button>
+        <button class="filter-btn" data-filter="sekolah">Sekolah</button>
+        <button class="filter-btn" data-filter="kegiatan">Kegiatan</button>
+        <button class="filter-btn" data-filter="alumni">Alumni</button>
+      </div>
+
+      <!-- GALLERY GRID -->
+      <div class="row g-4 gallery-grid">
+        <div class="col-md-4 gallery-item sekolah">
+          <div class="gallery-card">
+            <img src="Img/sekolah.jpg" alt="" />
+          </div>
+        </div>
+
+        <div class="col-md-4 gallery-item kegiatan">
+          <div class="gallery-card">
+            <img src="Img/kegiatan1.jpg" alt="" />
+          </div>
+        </div>
+
+        <div class="col-md-4 gallery-item alumni">
+          <div class="gallery-card">
+            <img src="Img/alumni1.jpg" alt="" />
+          </div>
+        </div>
+
+        <div class="col-md-4 gallery-item sekolah">
+          <div class="gallery-card">
+            <img src="Img/sekolah2.jpg" alt="" />
+          </div>
+        </div>
+
+        <div class="col-md-4 gallery-item kegiatan">
+          <div class="gallery-card">
+            <img src="Img/kegiatan2.jpg" alt="" />
+          </div>
+        </div>
+
+        <div class="col-md-4 gallery-item alumni">
+          <div class="gallery-card">
+            <img src="Img/alumni2.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <h5>SD Negeri 1 Sukamulya</h5>
+            <p>Portal Alumni dan Informasi Resmi Sekolah.</p>
+          </div>
+
+          <div class="col-md-6 mb-3">
+            <h5>Kontak Sekolah</h5>
+            <p class="footer-contact">
+              <i class="bi bi-geo-alt-fill"></i>
+              <a
+                href="https://www.google.com/maps?q=SD+Negeri+1+Sukamulya+Kuningan"
+                target="_blank"
+              >
+                Jl. Raya Cigugur No.114, Sukamulya, Kec. Kuningan, Kabupaten
+                Kuningan, Jawa Barat
+              </a>
+              <br />
+
+              <i class="bi bi-telephone-fill"></i>
+              <a href="tel:02328880472"> (0232) 8880472 </a>
+              <br />
+
+              <i class="bi bi-envelope-fill"></i>
+              <a href="mailto:sukamulyasdn1@gmail.com">
+                sukamulyasdn1@gmail.com
+              </a>
+            </p>
+          </div>
+        </div>
+
+        <hr />
+
+        <div class="text-center">
+          © 2026 SD Negeri 1 Sukamulya – Portal Alumni
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="js/home.js"></script>
+    <script src="js/navbar.js"></script>
+  </body>
+</html>

@@ -1,0 +1,190 @@
+/* ================= SEARCH PANEL (Alumni) ================= */
+.search-panel {
+  color: white;
+  padding: 40px 0;
+}
+
+.search-panel input,
+.search-panel select {
+  border-radius: 50px;
+  padding-left: 20px;
+}
+
+/* ================= SORT BUTTON (Alumni) ================= */
+#sortAZ,
+#sortZA {
+  border-radius: 50px;
+  font-weight: bold;
+  font-size: 14px;
+  height: 48px;
+}
+
+#sortAZ:hover,
+#sortZA:hover {
+  background: #003366;
+  color: white;
+}
+
+/* ================= CARD (Alumni) ================= */
+.card-style {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+  margin-top: -40px;
+}
+
+/* ================= TABLE (Alumni) ================= */
+thead {
+  background: #003366;
+  color: white;
+}
+
+table th {
+  background: #f1f4f8;
+  font-weight: bold;
+  color: #003366;
+}
+
+.table-hover tbody tr:hover {
+  background: #f0f5ff;
+}
+
+#infoPage {
+  font-size: 14px;
+  color: #666;
+}
+
+/* ================= PAGINATION (Alumni) ================= */
+.pagination .page-item.active .page-link {
+  background-color: #003366;
+  border-color: #003366;
+  color: #ffffff !important;
+  font-weight: bold;
+}
+
+.pagination .page-link {
+  color: #003366;
+  border-radius: 8px;
+}
+
+/* ================= MODERN PAGINATION (Alumni) ================= */
+.pagination {
+  gap: 8px;
+}
+
+.pagination .page-item .page-link {
+  border-radius: 10px;
+  border: none;
+  min-width: 38px;
+  height: 38px;
+  line-height: 38px;
+  padding: 0;
+  text-align: center;
+  font-weight: 600;
+  color: #003366;
+  background: #f1f4f8;
+  transition: all 0.25s ease;
+}
+
+/* Hover */
+.pagination .page-item .page-link:hover {
+  background: #dce9ff;
+  transform: translateY(-2px);
+}
+
+/* Active page */
+.pagination .page-item.active .page-link {
+  background: linear-gradient(135deg, #003366, #0055aa);
+  color: #fff !important;
+  box-shadow: 0 6px 14px rgba(0, 51, 102, 0.4);
+  transform: scale(1.05);
+}
+
+/* Disabled */
+.pagination .page-item.disabled .page-link {
+  background: #e0e0e0;
+  color: #aaa;
+  cursor: not-allowed;
+}
+
+/* Mobile friendly */
+@media (max-width: 576px) {
+  .pagination .page-item .page-link {
+    min-width: 34px;
+    height: 34px;
+    line-height: 34px;
+    font-size: 13px;
+  }
+}
+
+/* ================= SKELETON LOADING (Alumni) ================= */
+.skeleton-row td {
+  padding: 12px;
+}
+
+.skeleton-bar {
+  width: 100%;
+  height: 16px;
+  border-radius: 6px;
+  background: linear-gradient(90deg, #e0e0e0, #f5f5f5, #e0e0e0);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+  .logo-text {
+    font-size: 16px;
+  }
+
+  .search-panel {
+    text-align: center;
+  }
+}
+
+.card-style {
+  background: white;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  margin-top: -60px;
+  position: relative;
+  z-index: 2;
+}
+
+.table thead th {
+  background: linear-gradient(135deg, #003366, #0055aa);
+  color: white;
+  border: none;
+  padding: 14px;
+  font-size: 14px;
+}
+
+.table tbody td {
+  padding: 12px;
+  vertical-align: middle;
+  font-size: 14px;
+}
+
+.table-hover tbody tr {
+  transition: 0.2s;
+}
+
+.table-hover tbody tr:hover {
+  background: #eaf2ff;
+}
+
+.table tbody td:first-child {
+  font-weight: bold;
+  color: #003366;
+}
